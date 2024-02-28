@@ -1,11 +1,13 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
-body{
+/* GENERAL */
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,6 +15,7 @@ body{
     background-image: url(Img/Fondo\ Ingles.jpeg);
     background-size: cover;
 }
+
 
 .container-form {
     display: flex;
@@ -23,6 +26,54 @@ body{
     margin: 10px;
     transition: all 1s ease;
 }
+
+/* FIN GENERAL */
+
+/* INICIO PAGINA PRINCIPAL */
+.start {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #c7eef3;
+    border-radius: 20px;
+}
+
+.start-childs {
+    width: 100%;
+    padding: 30px;
+}
+
+
+.start-childs h2 {
+    font-size: 3.5rem;
+}
+
+.start-childs p {
+    font-size: 1.7rem;
+    margin: 20px 0;
+}
+
+.start-childs input {
+    font-size: 1.3rem;
+    background-color: #9191bd;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.start-childs input:hover {
+background-color: #7a7a9a;
+}
+
+
+/* FINA PAGINA PRINCIPAL */
 
 .information {
     width: 40%;
@@ -126,7 +177,7 @@ body{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.form input[type="submit"]:hover{
+.form input[type="submit"]:hover {
     background-color: #7a7a9a;
 }
 
@@ -138,17 +189,17 @@ body{
 /* RESPONSIVE FORM */
 
 @media screen and (max-width:750px) {
-    html{
+    html {
         font-size: 12px;
     }
 }
 
 @media screen and (max-width:580px) {
-    html{
+    html {
         font-size: 10px;
     }
 
-    .container-form{
+    .container-form {
         flex-direction: column;
         height: auto;
     }
@@ -160,7 +211,7 @@ body{
         border-bottom-left-radius: 0px;
     }
 
-    .form-information{
+    .form-information {
         width: 100%;
         padding: 20px;
         border-top-right-radius: 0px;
