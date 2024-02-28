@@ -20,12 +20,39 @@
             <div class="start-childs">
                 <h2>¡Bienvenido/a!</h2>
                 <p>Selecciona una opción</p>
-                <input type="button" value="Profesor/a" id="">
+                <input type="button" value="Profesor/a" id="teacher">
                 <input type="button" value="Alumno/a" id="student">
             </div>
         </div>
     </div>
     <!--FIN PAGINA PRINCIPAL-->
+
+    <!--FORMULARIO PROFESOR-->
+    <div class="container-form teacher hide">
+        <div class="form-teacher">
+            <div class="form-teacher-childs">
+                <h2>Iniciar sesión</h2>
+                <p>Ingresa tus datos para iniciar sesión</p>
+                <form class="form">
+                    <label>
+                        <box-icon name='envelope' color='#a7a7a7'></box-icon> <input type="email"
+                            placeholder="Correo electronico">
+                    </label>
+                    <label>
+                        <box-icon name='user' color='#a7a7a7'></box-icon> <input type="number"
+                            placeholder="DNI">
+                    </label>
+                    <label>
+                        <box-icon name='lock-alt' color='#a7a7a7'></box-icon> <input type="password"
+                            placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Iniciar sesión" class="submit-btn">
+                </form>
+                <input type="button" value="Página principal" class="main-teacher">
+            </div>
+        </div>
+    </div>
+    <!--FIN FORMULARIO PROFESOR-->
 
     <!--PRIMER FORMULARIO-->
     <div class="container-form register hide">
@@ -54,8 +81,8 @@
                             placeholder="Contraseña">
                     </label>
                     <input type="submit" value="Registrarse">
-                    <input type="button" value="Página principal" id="main">
                 </form>
+                <input type="button" value="Página principal" class="main-register">
             </div>
         </div>
     </div>
@@ -85,6 +112,7 @@
                     </label>
                     <input type="submit" value="Iniciar sesión">
                 </form>
+                <input type="button" value="Página principal" class="main-login">
             </div>
         </div>
     </div>
