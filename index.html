@@ -15,7 +15,7 @@
 
 <body>
     <!--PRIMER FORMULARIO-->
-    <div class="container-form">
+    <div class="container-form register">
         <div class="information">
             <div class="info-childs">
                 <h2>Bienvenido/a</h2>
@@ -30,7 +30,7 @@
                 <form class="form">
                     <label>
                         <box-icon name='user' color='#a7a7a7'></box-icon>
-                        <input type="text"                              placeholder="Nombre completo">
+                        <input type="text" placeholder="Nombre completo">
                     </label>
                     <label>
                         <box-icon name='envelope' color='#a7a7a7'></box-icon> <input type="email"
@@ -48,8 +48,34 @@
     <!--FIN PRIMER FORMULARIO-->
 
     <!--SEGUNDO FORMULARIO-->
-        
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Crea tú cuenta</h2>
+                <p>Si no tienes una cuenta ingresá aquí</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar sesión</h2>
+                <p>Ingresa tus datos para iniciar sesión</p>
+                <form class="form">
+                    <label>
+                        <box-icon name='envelope' color='#a7a7a7'></box-icon> <input type="email"
+                            placeholder="Correo electronico">
+                    </label>
+                    <label>
+                        <box-icon name='lock-alt' color='#a7a7a7'></box-icon> <input type="password"
+                            placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Iniciar sesión">
+                </form>
+            </div>
+        </div>
+    </div>
     <!--FIN SEGUNDO FORMULARIO-->
+    <script src="script.js"></script>
 </body>
 
 </html>
